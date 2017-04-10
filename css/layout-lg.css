@@ -1,0 +1,26 @@
+body {
+  max-width: 1100px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.sport {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+}
+video {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.art {
+  display: flex;
+  justify-content: center;
+}

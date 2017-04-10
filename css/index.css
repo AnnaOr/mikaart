@@ -1,45 +1,32 @@
 body {
-  max-width:1200px;
-  margin:0 auto;
+  margin: 0 auto;
   font-family: 'Cormorant Infant', serif;
   background-color: #9ff2ef;
 }
+
 header {
   background-image: url("../img/farbacolor.jpg");
   background-position: center;
   background-size: cover;
   height: 350px;
-  display: flex;
-  
 }
+
 header h1 {
-    font-size: 6rem;
-    color: white;
-    display:flex;
-    
-    align-items:flex-start;
-    justify-content:flex-start;
-}
-img {
-    height: 650px;
-    width: 500px;
-    margin:0 0 auto;
-    float: left
+  font-size: 6rem;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 p {
-    font-size: 2.5rem;
-    text-align:center;
-    padding: 10px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5px;
 }
-figure{
-  display: flex;
-  justify-content:space-between;
-}
- h2 {
+
+h2 {
+  font-size: 3rem;
   text-align: center
 }
 
-h2,h3,figure,footer {
-  clear:both;
-}

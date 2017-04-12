@@ -7,6 +7,7 @@ body {
 }
 video {
   max-width: 320px;
+  width: 100%;
 }
 .art {
     max-width: 300px;

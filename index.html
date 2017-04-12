@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" media="(min-width:800px)" href="css/layout-lg.css">
-    <link rel="stylesheet" media="(min-width:600px) and(max-width:799px)  " href="css/layout-md.css">
+    <link rel="stylesheet" media="(min-width:600px) and (max-width:799px)" href="css/layout-md.css">
     <link rel="stylesheet" media="(max-width:599px)" href="css/layout-sm.css">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="img/x-icon">
 </head>
@@ -54,11 +54,36 @@
     </main>
     <footer>
 
-        <a href="form.html">
-            <p>Пишіть мені :)</p>
-        </a>
+
+        <p>Пишіть мені :)</p>
+
+        <div class="form">
+
+            <form>
+                <p id="messageDone"></p>
+                <ul>
+                    
+               <li>
+                     <input type="text" id="name" placeholder="Ім'я" />
+                    
+               </li>
+                 <li>
+                    <input type="email" id="email" placeholder="Email" required />
+                 </li>
+                 <li>
+                    <textarea id="message" placeholder="Повідомлення"></textarea>
+             </li>
+
+                 <li><input type="submit" id="btn-submit" value="Відправити" />
+                </li>
+ </ul>
+            </form>
+
+        </div>
+
     </footer>
-    <script type="text/javascript" src="js.index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/form.js"></script>
 </body>
 
 </html>

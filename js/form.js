@@ -1,19 +1,29 @@
+
 $(function() {
-    $('#btn-send').click(sendForm);
+    $('#btn-submit').click(sendForm);
 });
 
 function sendForm(e) {
-    e.preventDefault();
-    $.ajax({
-        url: "https://formspree.io/aorfinyak@gmail.com",
-        method: "POST",
-        data: {
-            name: $('#name').val(),
-            message: $('#message').val()
-        },
-        dataType: "json"
-    });
-    .done(function() {
-        $('form').html('<h1>Дякую!</h1>');
-    });
+    var form = document.querySelector('form');
+    if (!form[0].checkValidity()) {
+        form.find(':submit').click(); // We try to submit invalid form to show message 
+    }
+    else {
+        e.preventDefault();
+        $.ajax({
+                url: "https://formspree.io/aorfinyak@gmail.com",
+                method: "POST",
+                data: {
+                    clientName: $('#name').val(),
+                    clientEmail: $('#email').val(),
+                    
+                    message: $('#message').val()
+                },
+                dataType: "json"
+            })
+            .done(function() {
+                $('#messageDone').html('Дякую за повідомлення');
+            });
+    }
+
 }

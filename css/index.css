@@ -20,7 +20,7 @@ header h1 {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   padding: 5px;
 }
@@ -31,8 +31,9 @@ video {
 }
 
 h2 {
-  font-size: 3rem;
-  text-align: center
+  font-size: 4rem;
+  font-weight:bold;
+  text-align: center;
 }
 
 .form {
@@ -42,7 +43,20 @@ h2 {
   justify-content: center;
   text-align: center;
   margin: auto;
+
+}
+li {
+  width: 100%;
+  
 }
 ul {
-    list-style: none;
+  list-style: none;
+  
+}
+#myCarousel {
+    margin: 0 auto;
+  width: 80%;
+}
+.carousel-inner img {
+    margin: 0 auto;
 }

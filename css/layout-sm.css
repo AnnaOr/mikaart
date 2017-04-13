@@ -1,16 +1,16 @@
 body {
   max-width: 599px;
+  margin: 0 auto;
 }
 .intro {
     display: flex;
     flex-direction:column;
 }
+.sport img {
+  margin:0 auto;
+  width: 90%;
+}
 video {
   max-width: 320px;
   width: 100%;
-}
-.art {
-    max-width: 300px;
-  display: flex;
-  justify-content: center;
 }

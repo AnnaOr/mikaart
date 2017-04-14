@@ -93,24 +93,23 @@
 
         <div class="form">
 
-            <form>
+            <form id="sendForm">
                 <label id="messageDone"></label>
-                <ul>
+                <div class="form-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ім'я">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення</label>
+                    <textarea  rows="4" id="message" placeholder="Повідомлення"></textarea>
+                </div>
 
-                    <li>
-                        <input type="text" id="name" placeholder="Ім'я" />
+                <button type="submit" id="btn-submit">Відправити</button>
 
-                    </li>
-                    <li>
-                        <input type="email" id="email" placeholder="Email" required />
-                    </li>
-                    <li>
-                        <textarea id="message" placeholder="Повідомлення"></textarea>
-                    </li>
-
-                    <li><input type="submit" id="btn-submit" value="Відправити" />
-                    </li>
-                </ul>
             </form>
 
         </div>

@@ -24,7 +24,9 @@ p {
   text-align: center;
   padding: 5px;
 }
-
+form {
+  font-size: 3rem;
+}
 video {
   margin: 0 auto;
   width: 100%;
@@ -32,31 +34,40 @@ video {
 
 h2 {
   font-size: 4rem;
-  font-weight:bold;
+  font-weight: bold;
   text-align: center;
 }
 
-.form {
-  padding: 0;
+#sendForm {
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #fff;
+  border-color: #ddd;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 10%;
+  padding: 5%;
+}
+
+textarea {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-
 }
+
 li {
   width: 100%;
-  
 }
+
 ul {
   list-style: none;
-  
 }
+
 #myCarousel {
-    margin: 0 auto;
+  margin: 0 auto;
   width: 80%;
 }
+
 .carousel-inner img {
-    margin: 0 auto;
+  margin: 0 auto;
 }
